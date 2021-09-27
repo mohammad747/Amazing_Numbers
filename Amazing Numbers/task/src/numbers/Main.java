@@ -21,112 +21,121 @@ public class Main {
     private static void menu(Scanner scanner) {
         boolean askAgain = true;
         while (askAgain) {
-            List<Long> number = getNumber(scanner);
-            if (number.size() == 1) {
-                if (number.get(0) > 0) {
-                    showOutput(scanner, number.get(0));
-                } else if (number.get(0) == -1) {
-                    askAgain = true;
-                } else if (number.get(0) == 0) {
-                    System.out.println("Goodbye!");
-                    askAgain = false;
-                }
-            } else {
-                if (number.get(0) == -1) {
-                    askAgain = true;
-                } else if (number.get(1) == 1) {
-                    showOutput(scanner, number.get(0));
-                } else {
-                    showOutputForMultipleNumbers(scanner, number);
-                }
+            List<Long> numbers = getNumber(scanner);
+
+            if (numbers.get(0) > 0) {
+                showOutput(scanner, numbers);
+            } else if (numbers.get(0) == -1) {
+                askAgain = true;
+            } else if (numbers.get(0) == 0) {
+                System.out.println("Goodbye!");
+                askAgain = false;
             }
         }
     }
 
-    private static void showOutputForMultipleNumbers(Scanner scanner, List<Long> number) {
-
-    }
-
-    private static void showOutput(Scanner scanner, long number) {
-        boolean[] results = new boolean[5];
-        if (calculateParity(number)) {
-            results[0] = true;
-            results[1] = false;
+    private static void showOutput(Scanner scanner, List<Long> numbers) {
+        List<Boolean> palindromeResults = new ArrayList<>();
+        List<Boolean> duckResults = new ArrayList<>();
+        List<Boolean> buzzResults = new ArrayList<>();
+        List<Boolean> parityResults = new ArrayList<>();
+        parityResults = calculateParity(numbers);
+        buzzResults = isBuzzNumber(numbers);
+        duckResults = isDuck(numbers);
+        palindromeResults = isPalindrome(numbers);
+        if (numbers.size() == 1) {
+//            if (calculateParity(numbers)) {
+//                results[0] = true;
+//                results[1] = false;
+//            } else {
+//                results[0] = false;
+//                results[1] = true;
+//            }
+            System.out.println("Properties of " + numbers.get(0));
+            System.out.println("\t       even: " + parityResults.get(0));
+            System.out.println("\t        odd: " + !parityResults.get(0));
+            System.out.println("\t       buzz: " + buzzResults.get(0));
+            System.out.println("\t       duck: " + duckResults.get(0));
+            System.out.println("\tpalindromic: " + palindromeResults.get(0));
+            System.out.println();
         } else {
-            results[0] = false;
-            results[1] = true;
-        }
-        results[2] = isBuzzNumber(number);
-        results[3] = isDuck(number);
-        results[4] = isPalindrome(number);
+            for (int i = 0; i < numbers.size(); i++) {
+                System.out.println(numbers.get(i)
+                        + " "
+                        + (parityResults.get(i) ? "even " : "odd ")
+                        + (buzzResults.get(i) ? "buzz " : "")
+                        + (duckResults.get(i) ? "duck " : "")
+                        + (palindromeResults.get(i) ? "palindrome " : "") + "\n");
 
-        System.out.println("Properties of " + number);
-        System.out.println("\t       even: " + results[0]);
-        System.out.println("\t        odd: " + results[1]);
-        System.out.println("\t       buzz: " + results[2]);
-        System.out.println("\t       duck: " + results[3]);
-        System.out.println("\tpalindromic: " + results[4]);
-        System.out.println();
+            }
+        }
     }
 
-    private static boolean isPalindrome(long number) {
+    private static List<Boolean> isGapful(List<Long> numbers) {
+
+    }
+
+    private static List<Boolean> isPalindrome(List<Long> numbers) {
         long r, sum = 0, temp;
         int n = 454;//It is the number variable to be checked for palindrome
-
-        temp = number;
-        while (number > 0) {
-            r = number % 10;  //getting remainder
-            sum = (sum * 10) + r;
-            number = number / 10;
+        List<Boolean> results = new ArrayList<>();
+        for (Long element : numbers) {
+            temp = element;
+            while (element > 0) {
+                r = element % 10;  //getting remainder
+                sum = (sum * 10) + r;
+                element = element / 10;
+            }
+            results.add(temp == sum);
         }
-        return temp == sum;
+        return results;
     }
 
 
-    private static boolean isDuck(long number) {
-        String stringNumber = String.valueOf(number);
-        if (stringNumber.startsWith("0") & stringNumber.contains("0")) {
-            return true;
-        } else if (stringNumber.contains("0")) {
-            return true;
-        } else if (stringNumber.startsWith("0") & !stringNumber.contains("0")) {
-            return false;
-        } else {
-            return false;
+    private static List<Boolean> isDuck(List<Long> numbers) {
+        List<Boolean> duckResults = new ArrayList<>();
+        for (Long element : numbers) {
+            String stringNumber = String.valueOf(element);
+            if (stringNumber.startsWith("0") & stringNumber.contains("0")) {
+                duckResults.add(true);
+            } else if (stringNumber.contains("0")) {
+                duckResults.add(true);
+            } else if (stringNumber.startsWith("0") & !stringNumber.contains("0")) {
+                duckResults.add(false);
+            } else {
+                duckResults.add(false);
+            }
         }
+        return duckResults;
     }
 
-    private static boolean isBuzzNumber(long number) {
-        String stringNumber = String.valueOf(number);
-        if (number % 7 == 0 & stringNumber.endsWith("7")) {
-            return true;
-//            System.out.println("It is a Buzz number.");
-//            System.out.println("Explanation:");
-//            System.out.println(stringNumber + " is divisible by 7 and ends with 7.");
-        } else if (number % 7 == 0) {
-            return true;
-//            System.out.println("It is a Buzz number.");
-//            System.out.println("Explanation:");
-//            System.out.println(stringNumber + " is divisible by 7.");
-        } else if (stringNumber.endsWith("7")) {
-            return true;
-//            System.out.println("It is a Buzz number.");
-//            System.out.println("Explanation:");
-//            System.out.println(stringNumber + " ends with 7.");
-        } else {
-            return false;
-//            System.out.println("It is not a Buzz number.");
-//            System.out.println("Explanation:");
-//            System.out.println(stringNumber + " is neither divisible by 7 nor does it end with 7.");
+    private static List<Boolean> isBuzzNumber(List<Long> numbers) {
+        List<Boolean> buzzResults = new ArrayList<>();
+        for (Long element : numbers) {
+            String stringNumber = String.valueOf(element);
+            if (element % 7 == 0 & stringNumber.endsWith("7")) {
+                buzzResults.add(true);
+            } else if (element % 7 == 0) {
+                buzzResults.add(true);
+            } else if (stringNumber.endsWith("7")) {
+                buzzResults.add(true);
+            } else {
+                buzzResults.add(false);
+            }
         }
+        return buzzResults;
     }
 
-    private static boolean calculateParity(long number) {
-        if (number % 2 == 0) {
-            return true;
-        } else {
-            return false;
+    private static List<Boolean> calculateParity(List<Long> numbers) {
+        List<Boolean> parityResults = new ArrayList<>();
+        for (Long element : numbers) {
+            if (element % 2 == 0) {
+                parityResults.add(true);
+            } else {
+                parityResults.add(false);
+            }
         }
+        return parityResults;
     }
 
     private static List<Long> getNumber(Scanner scanner) {
@@ -140,10 +149,11 @@ public class Main {
             } else if (Long.parseLong(element) != 0) {
                 list.add(Long.parseLong(element));
             } else {
+                list.add(0L);
                 return list;
             }
         }
-       if (list.size() == 1) {
+        if (list.size() == 1) {
             if (list.get(0) == 0) {
                 return list;
             } else if (list.get(0) < 0) {
@@ -160,19 +170,14 @@ public class Main {
                 list.clear();
                 list.add(-1L);
                 return list;
-            }
-            List<Long> numbers = new ArrayList<>();
-            if (list.get(1) == 1) {
-                return list;
             } else {
-                numbers.add(list.get(0));
-                for (int i = 1; i <= list.get(1) - 1; i++) {
-                    numbers.add(list.get(0) + 1);
+                long length = list.get(1);
+                list.remove(1);
+                for (long i = 1; i < length; i++) {
+                    list.add(list.get((int) i - 1) + 1);
                 }
-                return numbers;
+                return list;
             }
         }
     }
-
-
 }

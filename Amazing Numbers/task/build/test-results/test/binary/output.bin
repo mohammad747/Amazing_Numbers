@@ -10,5 +10,653 @@
 *- separate the parameters with one space;
 - enter 0 to exit.
 
-Enter a request: 
+Enter a request: 
+
 > 0
+
+Goodbye!
+[1;31m
+Start test 2[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> -91
+8The first parameter should be a natural number or zero.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 3[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> -118
+8The first parameter should be a natural number or zero.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 4[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> -68
+8The first parameter should be a natural number or zero.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 5[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> -43
+8The first parameter should be a natural number or zero.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 6[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> -53
+8The first parameter should be a natural number or zero.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 7[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 17234 -16836
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 8[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 22225 -3979
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 9[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 18286 -7765
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 10[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 17834 -23392
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 11[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 6711 -585
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 12[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 20263 -589
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 13[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 19295 -18902
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 14[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 3384 -25841
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 15[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 456 -14773
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 16[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 11852 -25647
+1The second parameter should be a natural number.
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 17[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 1
+ Properties of 1
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 2
+ Properties of 2
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 3
+ Properties of 3
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 4
+ Properties of 4
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 5
+ Properties of 5
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 6
+ Properties of 6
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 7
+ Properties of 7
+	       even: false
+	        odd: true
+	       buzz: true
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 8
+ Properties of 8
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 9
+ Properties of 9
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 10
+ Properties of 10
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 11
+ Properties of 11
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: false
+	palindromic: true
+	     gapful: false
+
+Enter a request: 
+
+> 12
+ Properties of 12
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: false
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 13
+ Properties of 13
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: false
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 14
+ Properties of 14
+	       even: true
+	        odd: false
+	       buzz: true
+	       duck: false
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 529326379299187312
+# Properties of 529326379299187312
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: false
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 7628821688459701904
+$ Properties of 7628821688459701904
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 7413507722371557282
+$ Properties of 7413507722371557282
+	       even: true
+	        odd: false
+	       buzz: true
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 7973554431517514377
+$ Properties of 7973554431517514377
+	       even: false
+	        odd: true
+	       buzz: true
+	       duck: false
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 5754616688104820346
+$ Properties of 5754616688104820346
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 7223178285832886638
+$ Properties of 7223178285832886638
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: false
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 76165807595725837
+" Properties of 76165807595725837
+	       even: false
+	        odd: true
+	       buzz: true
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 7918499447019905013
+$ Properties of 7918499447019905013
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 4682985274304698707
+$ Properties of 4682985274304698707
+	       even: false
+	        odd: true
+	       buzz: true
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 7715915260438493139
+$ Properties of 7715915260438493139
+	       even: false
+	        odd: true
+	       buzz: false
+	       duck: true
+	palindromic: false
+	     gapful: false
+
+Enter a request: 
+
+> 0
+
+Goodbye!
+[1;31m
+Start test 18[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+1- enter a natural number to know its properties;
+B- enter two natural numbers to obtain the properties of the list:
+6  * the first parameter represents a starting number;
+Q  * the second parameters show how many consecutive numbers are to be processed;
+*- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+
+> 1 15
+1 odd palindrome 
+	2 even 
+3 odd 
+	4 even 
+5 odd 
+	6 even 
+7 odd buzz 
+	8 even 
+9 odd 
+10 even duck 
+	11 odd 
+
+12 even 
+	13 odd 
+14 even buzz 
+	15 odd 
+
+Enter a request: 
+

@@ -609,19 +609,16 @@ files:
 feedback_link: https://hyperskill.org/projects/184/stages/934/implement#comment
 status: Failed
 feedback:
-  message: "Exception in test #1\n\njava.lang.IndexOutOfBoundsException: Index 0 out\
-    \ of bounds for length 0\r\n\tat java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)\r\
-    \n\tat java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)\r\
-    \n\tat java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)\r\
-    \n\tat java.base/java.util.Objects.checkIndex(Objects.java:372)\r\n\tat java.base/java.util.ArrayList.get(ArrayList.java:459)\r\
-    \n\tat numbers.Main.menu(Main.java:35)\r\n\tat numbers.Main.main(Main.java:18)\n\
-    \nPlease find below the output of your program during this failed test.\nNote\
-    \ that the &#39;&gt;&#39; character indicates the beginning of the input line.\n\
-    \n---\n\nWelcome to Amazing Numbers!\n\nSupported requests:\n- enter a natural\
-    \ number to know its properties;\n- enter two natural numbers to obtain the properties\
-    \ of the list:\n  * the first parameter represents a starting number;\n  * the\
-    \ second parameters show how many consecutive numbers are to be processed;\n-\
-    \ separate the parameters with one space;\n- enter 0 to exit.\n\nEnter a request:\
-    \ \n&gt; 0"
-  time: Sun, 26 Sep 2021 11:46:11 UTC
+  message: "Wrong answer in test #18\n\nCan&#39;t parse line: &quot;1 odd palindrome\
+    \ &quot;. Expected: 1 is ...\n\nPlease find below the output of your program during\
+    \ this failed test.\nNote that the &#39;&gt;&#39; character indicates the beginning\
+    \ of the input line.\n\n---\n\nWelcome to Amazing Numbers!\n\nSupported requests:\n\
+    - enter a natural number to know its properties;\n- enter two natural numbers\
+    \ to obtain the properties of the list:\n  * the first parameter represents a\
+    \ starting number;\n  * the second parameters show how many consecutive numbers\
+    \ are to be processed;\n- separate the parameters with one space;\n- enter 0 to\
+    \ exit.\n\nEnter a request: \n\n&gt; 1 15\n1 odd palindrome \n2 even \n3 odd \n\
+    4 even \n5 odd \n6 even \n7 odd buzz \n8 even \n9 odd \n10 even duck \n11 odd\
+    \ \n12 even \n13 odd \n14 even buzz \n15 odd \n\nEnter a request:"
+  time: Mon, 27 Sep 2021 19:10:59 UTC
 record: -1

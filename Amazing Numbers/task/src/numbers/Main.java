@@ -30,6 +30,14 @@ public class Main {
             } else if (numbers.get(0) == 0) {
                 System.out.println("Goodbye!");
                 askAgain = false;
+            } else if (numbers.get(0) == -2) {
+                System.out.println("Supported requests:\n" +
+                        "- enter a natural number to know its properties;\n" +
+                        "- enter two natural numbers to obtain the properties of the list:\n" +
+                        "  * the first parameter represents a starting number;\n" +
+                        "  * the second parameters show how many consecutive numbers are to be processed;\n" +
+                        "- separate the parameters with one space;\n" +
+                        "- enter 0 to exit.\n");
             }
         }
     }
@@ -39,24 +47,20 @@ public class Main {
         List<Boolean> duckResults = new ArrayList<>();
         List<Boolean> buzzResults = new ArrayList<>();
         List<Boolean> parityResults = new ArrayList<>();
+        List<Boolean> gapfulResults = new ArrayList<>();
         parityResults = calculateParity(numbers);
         buzzResults = isBuzzNumber(numbers);
         duckResults = isDuck(numbers);
         palindromeResults = isPalindrome(numbers);
+        gapfulResults = isGapful(numbers);
         if (numbers.size() == 1) {
-//            if (calculateParity(numbers)) {
-//                results[0] = true;
-//                results[1] = false;
-//            } else {
-//                results[0] = false;
-//                results[1] = true;
-//            }
-            System.out.println("Properties of " + numbers.get(0));
+            System.out.println(" Properties of " + numbers.get(0));
             System.out.println("\t       even: " + parityResults.get(0));
             System.out.println("\t        odd: " + !parityResults.get(0));
             System.out.println("\t       buzz: " + buzzResults.get(0));
             System.out.println("\t       duck: " + duckResults.get(0));
             System.out.println("\tpalindromic: " + palindromeResults.get(0));
+            System.out.println("\t     gapful: " + gapfulResults.get(0));
             System.out.println();
         } else {
             for (int i = 0; i < numbers.size(); i++) {
@@ -65,14 +69,29 @@ public class Main {
                         + (parityResults.get(i) ? "even " : "odd ")
                         + (buzzResults.get(i) ? "buzz " : "")
                         + (duckResults.get(i) ? "duck " : "")
-                        + (palindromeResults.get(i) ? "palindrome " : "") + "\n");
+                        + (palindromeResults.get(i) ? "palindrome " : "")
+                        + (gapfulResults.get(i) ? "gapful" : ""));
 
             }
+            System.out.println();
         }
     }
 
     private static List<Boolean> isGapful(List<Long> numbers) {
-
+        List<Boolean> gapfulResults = new ArrayList<>();
+        for (Long element : numbers) {
+            char firstChar = String.valueOf(element).charAt(0);
+            char lastChar = String.valueOf(element).charAt(String.valueOf(element).length() - 1);
+            int firstDigit = Integer.parseInt(String.valueOf(firstChar));
+            int lastDigit = Integer.parseInt(String.valueOf(lastChar));
+            int divider = firstDigit * 10 + lastDigit;
+            if (String.valueOf(element).length() >= 3 && element % divider == 0) {
+                gapfulResults.add(true);
+            } else {
+                gapfulResults.add(false);
+            }
+        }
+        return gapfulResults;
     }
 
     private static List<Boolean> isPalindrome(List<Long> numbers) {
@@ -144,9 +163,18 @@ public class Main {
         String[] array = scanner.nextLine().split(" ");
         for (String element : array) {
             if (element.equalsIgnoreCase("")) {
+                list.add(-2L);
+                return list;
+            }
+            try {
+                long l = Long.parseLong(element);
+            } catch (NumberFormatException nfe) {
+                System.out.println();
+                System.out.println("The first parameter should be a natural number or zero.\n");
                 list.add(-1L);
                 return list;
-            } else if (Long.parseLong(element) != 0) {
+            }
+            if (Long.parseLong(element) != 0) {
                 list.add(Long.parseLong(element));
             } else {
                 list.add(0L);
@@ -166,7 +194,7 @@ public class Main {
             }
         } else {
             if (list.get(1) < 0) {
-                System.out.println("The second parameter shows how many consecutive numbers");
+                System.out.println("The second parameter should be a natural number.\n");
                 list.clear();
                 list.add(-1L);
                 return list;

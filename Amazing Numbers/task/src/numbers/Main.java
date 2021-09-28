@@ -65,11 +65,11 @@ public class Main {
         } else {
             for (int i = 0; i < numbers.size(); i++) {
                 System.out.println(numbers.get(i)
-                        + " "
+                        + " is "
                         + (parityResults.get(i) ? "even " : "odd ")
                         + (buzzResults.get(i) ? "buzz " : "")
                         + (duckResults.get(i) ? "duck " : "")
-                        + (palindromeResults.get(i) ? "palindrome " : "")
+                        + (palindromeResults.get(i) ? "palindromic " : "")
                         + (gapfulResults.get(i) ? "gapful" : ""));
 
             }
@@ -95,17 +95,17 @@ public class Main {
     }
 
     private static List<Boolean> isPalindrome(List<Long> numbers) {
-        long r, sum = 0, temp;
-        int n = 454;//It is the number variable to be checked for palindrome
         List<Boolean> results = new ArrayList<>();
         for (Long element : numbers) {
-            temp = element;
-            while (element > 0) {
-                r = element % 10;  //getting remainder
-                sum = (sum * 10) + r;
-                element = element / 10;
-            }
-            results.add(temp == sum);
+            String original, reverse = "";
+            original = String.valueOf(element);
+            int length = original.length();
+            for (int i = length - 1; i >= 0; i--)
+                reverse = reverse + original.charAt(i);
+            if (original.equals(reverse))
+                results.add(true);
+            else
+                results.add(false);
         }
         return results;
     }

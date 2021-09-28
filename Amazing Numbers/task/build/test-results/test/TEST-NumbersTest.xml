@@ -1,97 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NumbersTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-09-27T19:10:58" hostname="DESKTOP-E396EDH" time="0.832">
+<testsuite name="NumbersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-28T03:25:14" hostname="HASHEMI-INT" time="1.942">
   <properties/>
-  <testcase name="start" classname="NumbersTest" time="0.832">
-    <failure message="java.lang.AssertionError: Wrong answer in test #18&#10;&#10;Can't parse line: &quot;1 odd palindrome &quot;. Expected: 1 is ...&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Welcome to Amazing Numbers!&#10;&#10;Supported requests:&#10;- enter a natural number to know its properties;&#10;- enter two natural numbers to obtain the properties of the list:&#10;  * the first parameter represents a starting number;&#10;  * the second parameters show how many consecutive numbers are to be processed;&#10;- separate the parameters with one space;&#10;- enter 0 to exit.&#10;&#10;Enter a request: &#10;&#10;&gt; 1 15&#10;1 odd palindrome &#10;2 even &#10;3 odd &#10;4 even &#10;5 odd &#10;6 even &#10;7 odd buzz &#10;8 even &#10;9 odd &#10;10 even duck &#10;11 odd &#10;12 even &#10;13 odd &#10;14 even buzz &#10;15 odd &#10;&#10;Enter a request:" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #18
-
-Can't parse line: &quot;1 odd palindrome &quot;. Expected: 1 is ...
-
-Please find below the output of your program during this failed test.
-Note that the '&gt;' character indicates the beginning of the input line.
-
----
-
-Welcome to Amazing Numbers!
-
-Supported requests:
-- enter a natural number to know its properties;
-- enter two natural numbers to obtain the properties of the list:
-  * the first parameter represents a starting number;
-  * the second parameters show how many consecutive numbers are to be processed;
-- separate the parameters with one space;
-- enter 0 to exit.
-
-Enter a request: 
-
-&gt; 1 15
-1 odd palindrome 
-2 even 
-3 odd 
-4 even 
-5 odd 
-6 even 
-7 odd buzz 
-8 even 
-9 odd 
-10 even duck 
-11 odd 
-12 even 
-13 odd 
-14 even buzz 
-15 odd 
-
-Enter a request:
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:155)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</failure>
-  </testcase>
+  <testcase name="start" classname="NumbersTest" time="1.942"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Welcome to Amazing Numbers!
@@ -105,7 +15,6 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -121,12 +30,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
 > -91
 The first parameter should be a natural number or zero.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -142,12 +49,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> -118
+> -29
 The first parameter should be a natural number or zero.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -163,12 +68,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> -68
+> -47
 The first parameter should be a natural number or zero.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -184,12 +87,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> -43
+> -45
 The first parameter should be a natural number or zero.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -205,12 +106,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> -53
+> -118
 The first parameter should be a natural number or zero.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -226,12 +125,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 17234 -16836
+> 14330 -10348
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -247,12 +144,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 22225 -3979
+> 10556 -13048
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -268,12 +163,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 18286 -7765
+> 27547 -452
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -289,12 +182,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 17834 -23392
+> 7453 -15074
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -310,12 +201,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 6711 -585
+> 19212 -4089
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -331,12 +220,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 20263 -589
+> 10965 -10831
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -352,12 +239,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 19295 -18902
+> 4095 -1778
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -373,12 +258,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 3384 -25841
+> 569 -31035
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -394,12 +277,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 456 -14773
+> 10629 -6250
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -415,12 +296,10 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
-> 11852 -25647
+> 9196 -20748
 The second parameter should be a natural number.
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -436,7 +315,6 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
 > 1
  Properties of 1
 	       even: false
@@ -447,7 +325,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 2
  Properties of 2
 	       even: true
@@ -458,7 +335,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 3
  Properties of 3
 	       even: false
@@ -469,7 +345,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 4
  Properties of 4
 	       even: true
@@ -480,7 +355,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 5
  Properties of 5
 	       even: false
@@ -491,7 +365,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 6
  Properties of 6
 	       even: true
@@ -502,7 +375,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 7
  Properties of 7
 	       even: false
@@ -513,7 +385,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 8
  Properties of 8
 	       even: true
@@ -524,7 +395,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 9
  Properties of 9
 	       even: false
@@ -535,7 +405,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 10
  Properties of 10
 	       even: true
@@ -546,7 +415,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 11
  Properties of 11
 	       even: false
@@ -557,7 +425,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 12
  Properties of 12
 	       even: true
@@ -568,7 +435,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 13
  Properties of 13
 	       even: false
@@ -579,7 +445,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 14
  Properties of 14
 	       even: true
@@ -590,20 +455,18 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
-> 529326379299187312
- Properties of 529326379299187312
-	       even: true
-	        odd: false
+> 1841577827922553481
+ Properties of 1841577827922553481
+	       even: false
+	        odd: true
 	       buzz: false
 	       duck: false
 	palindromic: false
 	     gapful: false
 
 Enter a request: 
-
-> 7628821688459701904
- Properties of 7628821688459701904
+> 7938232250520522418
+ Properties of 7938232250520522418
 	       even: true
 	        odd: false
 	       buzz: false
@@ -612,9 +475,18 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
+> 1509398749073229880
+ Properties of 1509398749073229880
+	       even: true
+	        odd: false
+	       buzz: false
+	       duck: true
+	palindromic: false
+	     gapful: true
 
-> 7413507722371557282
- Properties of 7413507722371557282
+Enter a request: 
+> 3559507574842933224
+ Properties of 3559507574842933224
 	       even: true
 	        odd: false
 	       buzz: true
@@ -623,75 +495,58 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
-> 7973554431517514377
- Properties of 7973554431517514377
+> 6640283348244098061
+ Properties of 6640283348244098061
 	       even: false
 	        odd: true
-	       buzz: true
-	       duck: false
+	       buzz: false
+	       duck: true
 	palindromic: false
 	     gapful: false
 
 Enter a request: 
+> 2112350262572924472
+ Properties of 2112350262572924472
+	       even: true
+	        odd: false
+	       buzz: true
+	       duck: true
+	palindromic: false
+	     gapful: false
 
-> 5754616688104820346
- Properties of 5754616688104820346
+Enter a request: 
+> 9033561003689698176
+ Properties of 9033561003689698176
 	       even: true
 	        odd: false
 	       buzz: false
 	       duck: true
 	palindromic: false
-	     gapful: false
+	     gapful: true
 
 Enter a request: 
-
-> 7223178285832886638
- Properties of 7223178285832886638
+> 5098249304463898324
+ Properties of 5098249304463898324
 	       even: true
 	        odd: false
-	       buzz: false
-	       duck: false
-	palindromic: false
-	     gapful: false
-
-Enter a request: 
-
-> 76165807595725837
- Properties of 76165807595725837
-	       even: false
-	        odd: true
 	       buzz: true
 	       duck: true
 	palindromic: false
 	     gapful: false
 
 Enter a request: 
-
-> 7918499447019905013
- Properties of 7918499447019905013
-	       even: false
-	        odd: true
-	       buzz: false
-	       duck: true
-	palindromic: false
-	     gapful: false
-
-Enter a request: 
-
-> 4682985274304698707
- Properties of 4682985274304698707
-	       even: false
-	        odd: true
+> 1725627948017377558
+ Properties of 1725627948017377558
+	       even: true
+	        odd: false
 	       buzz: true
 	       duck: true
 	palindromic: false
 	     gapful: false
 
 Enter a request: 
-
-> 7715915260438493139
- Properties of 7715915260438493139
+> 4744239004403936201
+ Properties of 4744239004403936201
 	       even: false
 	        odd: true
 	       buzz: false
@@ -700,7 +555,6 @@ Enter a request:
 	     gapful: false
 
 Enter a request: 
-
 > 0
 Goodbye!
 ?[1;31m
@@ -716,26 +570,318 @@ Supported requests:
 - enter 0 to exit.
 
 Enter a request: 
-
 > 1 15
-1 odd palindrome 
-2 even 
-3 odd 
-4 even 
-5 odd 
-6 even 
-7 odd buzz 
-8 even 
-9 odd 
-10 even duck 
-11 odd 
-12 even 
-13 odd 
-14 even buzz 
-15 odd 
+1 is odd palindromic 
+2 is even palindromic 
+3 is odd palindromic 
+4 is even palindromic 
+5 is odd palindromic 
+6 is even palindromic 
+7 is odd buzz palindromic 
+8 is even palindromic 
+9 is odd palindromic 
+10 is even duck 
+11 is odd palindromic 
+12 is even 
+13 is odd 
+14 is even buzz 
+15 is odd 
 
 Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 19?[0m
+Welcome to Amazing Numbers!
 
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 1551122166968893064 3
+1551122166968893064 is even buzz duck gapful
+1551122166968893065 is odd duck gapful
+1551122166968893066 is even duck 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 20?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 8612812847683672497 3
+8612812847683672497 is odd buzz 
+8612812847683672498 is even 
+8612812847683672499 is odd 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 21?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 6659530067852263192 6
+6659530067852263192 is even duck 
+6659530067852263193 is odd duck 
+6659530067852263194 is even duck 
+6659530067852263195 is odd duck 
+6659530067852263196 is even buzz duck 
+6659530067852263197 is odd buzz duck 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 22?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 3040922905770107275 17
+3040922905770107275 is odd duck 
+3040922905770107276 is even duck 
+3040922905770107277 is odd buzz duck 
+3040922905770107278 is even duck 
+3040922905770107279 is odd duck 
+3040922905770107280 is even duck gapful
+3040922905770107281 is odd buzz duck 
+3040922905770107282 is even duck 
+3040922905770107283 is odd duck 
+3040922905770107284 is even duck 
+3040922905770107285 is odd duck 
+3040922905770107286 is even duck 
+3040922905770107287 is odd buzz duck gapful
+3040922905770107288 is even buzz duck 
+3040922905770107289 is odd duck 
+3040922905770107290 is even duck 
+3040922905770107291 is odd duck 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 23?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 7981738264129261771 17
+7981738264129261771 is odd 
+7981738264129261772 is even buzz 
+7981738264129261773 is odd 
+7981738264129261774 is even 
+7981738264129261775 is odd 
+7981738264129261776 is even 
+7981738264129261777 is odd buzz 
+7981738264129261778 is even 
+7981738264129261779 is odd buzz 
+7981738264129261780 is even duck 
+7981738264129261781 is odd 
+7981738264129261782 is even 
+7981738264129261783 is odd 
+7981738264129261784 is even 
+7981738264129261785 is odd 
+7981738264129261786 is even buzz 
+7981738264129261787 is odd buzz 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 24?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 4126039522240058302 9
+4126039522240058302 is even duck 
+4126039522240058303 is odd duck 
+4126039522240058304 is even buzz duck 
+4126039522240058305 is odd duck 
+4126039522240058306 is even duck 
+4126039522240058307 is odd buzz duck 
+4126039522240058308 is even duck 
+4126039522240058309 is odd duck 
+4126039522240058310 is even duck 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 25?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 1689854154597278755 15
+1689854154597278755 is odd 
+1689854154597278756 is even 
+1689854154597278757 is odd buzz 
+1689854154597278758 is even 
+1689854154597278759 is odd 
+1689854154597278760 is even duck gapful
+1689854154597278761 is odd buzz 
+1689854154597278762 is even 
+1689854154597278763 is odd 
+1689854154597278764 is even 
+1689854154597278765 is odd 
+1689854154597278766 is even 
+1689854154597278767 is odd buzz 
+1689854154597278768 is even buzz 
+1689854154597278769 is odd 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 26?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 6388260548930763257 20
+6388260548930763257 is odd buzz duck 
+6388260548930763258 is even buzz duck 
+6388260548930763259 is odd duck 
+6388260548930763260 is even duck 
+6388260548930763261 is odd duck 
+6388260548930763262 is even duck 
+6388260548930763263 is odd duck 
+6388260548930763264 is even duck gapful
+6388260548930763265 is odd buzz duck 
+6388260548930763266 is even duck 
+6388260548930763267 is odd buzz duck 
+6388260548930763268 is even duck 
+6388260548930763269 is odd duck 
+6388260548930763270 is even duck 
+6388260548930763271 is odd duck 
+6388260548930763272 is even buzz duck 
+6388260548930763273 is odd duck 
+6388260548930763274 is even duck 
+6388260548930763275 is odd duck 
+6388260548930763276 is even duck 
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 27?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 394782565132919477 19
+394782565132919477 is odd buzz 
+394782565132919478 is even 
+394782565132919479 is odd 
+394782565132919480 is even duck 
+394782565132919481 is odd buzz 
+394782565132919482 is even 
+394782565132919483 is odd 
+394782565132919484 is even 
+394782565132919485 is odd 
+394782565132919486 is even 
+394782565132919487 is odd buzz 
+394782565132919488 is even buzz 
+394782565132919489 is odd 
+394782565132919490 is even duck gapful
+394782565132919491 is odd 
+394782565132919492 is even 
+394782565132919493 is odd 
+394782565132919494 is even 
+394782565132919495 is odd buzz gapful
+
+Enter a request: 
+> 0
+Goodbye!
+?[1;31m
+Start test 28?[0m
+Welcome to Amazing Numbers!
+
+Supported requests:
+- enter a natural number to know its properties;
+- enter two natural numbers to obtain the properties of the list:
+  * the first parameter represents a starting number;
+  * the second parameters show how many consecutive numbers are to be processed;
+- separate the parameters with one space;
+- enter 0 to exit.
+
+Enter a request: 
+> 4554617489603100334 3
+4554617489603100334 is even duck 
+4554617489603100335 is odd duck 
+4554617489603100336 is even duck 
+
+Enter a request: 
+> 0
+Goodbye!
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
